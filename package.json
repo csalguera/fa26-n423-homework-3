@@ -1,0 +1,13 @@
+{
+  "name": "student-directory",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "live-server",
+    "compile": "sass scss/styles.scss css/styles.css -w --no-source-map"
+  },
+  "devDependencies": {
+    "sass": "^1.93.2",
+    "live-server": "^1.2.2"
+  }
+}

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A simple student directory stored in your browser."
+    />
+    <title>Student Directory</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="page-header">
+        <h1>Student Directory</h1>
+        <p>Add students and view your saved student directory.</p>
+      </header>
+
+      <section class="content-section" aria-labelledby="add-student-heading">
+        <h2 id="add-student-heading">Add Student</h2>
+
+        <form id="student-form" novalidate>
+          <div class="form-grid">
+            <div class="field-group">
+              <label for="name">Name</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Jane Smith"
+                required
+              />
+            </div>
+
+            <div class="field-group">
+              <label for="age">Age</label>
+              <input
+                id="age"
+                name="age"
+                type="number"
+                min="1"
+                max="120"
+                placeholder="21"
+                required
+              />
+            </div>
+
+            <div class="field-group">
+              <label for="phone">Phone</label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                placeholder="(317) 555-0123"
+                required
+              />
+            </div>
+
+            <div class="field-group">
+              <label for="email">Email Address</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="jane@example.com"
+                required
+              />
+            </div>
+
+            <div class="field-group field-group-wide">
+              <label for="classes">Classes</label>
+              <input
+                id="classes"
+                name="classes"
+                type="text"
+                placeholder="N215, N220, N423"
+                required
+              />
+              <p class="helper-text">Separate multiple classes with commas.</p>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button class="button button-primary" type="submit">
+              Add Student
+            </button>
+            <p
+              id="success-message"
+              class="success-message"
+              role="status"
+              hidden
+            >
+              Student added successfully.
+            </p>
+          </div>
+        </form>
+      </section>
+
+      <section class="content-section" aria-labelledby="saved-students-heading">
+        <div class="section-heading">
+          <h2 id="saved-students-heading">Saved Students</h2>
+          <p>Students saved in this browser.</p>
+        </div>
+
+        <button
+          class="button button-secondary"
+          id="display-students"
+          type="button"
+          aria-controls="student-records"
+          aria-expanded="false"
+        >
+          Display Students
+        </button>
+        <div
+          id="student-records"
+          class="student-records"
+          aria-live="polite"
+        ></div>
+      </section>
+    </main>
+
+    <script type="module" src="/js/app.js"></script>
+  </body>
+</html>

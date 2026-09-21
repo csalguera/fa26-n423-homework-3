@@ -1,0 +1,39 @@
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px 32px;
+}
+
+.field-group-wide {
+  grid-column: 1 / -1;
+}
+
+.field-group label {
+  display: block;
+  margin-bottom: 6px;
+  color: #374151;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.field-group input {
+  display: block;
+  width: 100%;
+  padding: 10px 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #fff;
+  color: #1a1d23;
+  transition: border-color 0.15s;
+}
+
+.field-group input:focus {
+  border-color: var(--color-accent);
+}
+
+.helper-text {
+  margin: 6px 0 0;
+  color: var(--color-muted);
+  font-size: 0.82rem;
+}

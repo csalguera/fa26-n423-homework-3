@@ -1,0 +1,50 @@
+@media (max-width: 640px) {
+  .page-shell {
+    padding: 32px 16px 56px;
+  }
+
+  .page-header {
+    margin-bottom: 32px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .field-group-wide {
+    grid-column: auto;
+  }
+
+  .student-table-wrapper {
+    display: none;
+  }
+
+  .student-cards {
+    display: block;
+  }
+}
+@media (max-width: 640px) {
+  .page-shell {
+    padding: 32px 16px 56px;
+  }
+
+  .page-header {
+    margin-bottom: 32px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .field-group-wide {
+    grid-column: auto;
+  }
+
+  .student-table-wrapper {
+    display: none;
+  }
+
+  .student-cards {
+    display: block;
+  }
+}
